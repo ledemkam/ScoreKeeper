@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <title>Document</title>
+   </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
-</head>
+   <body>
+      <main id="main">
+         <div class="contains">
+            <h1 id="team1-score">0</h1>
+            <b>:</b>
+            <h1 id="team2-score">0</h1>
+         </div>
+         <div class="contains2">
+            <div class="contains3">
+               <h3>Team-1</h3>
+               <button onclick="addscoreOne('one', 1)">+1</button>
+               <button onclick="addscoreOne('one', 2)">+2</button>
+               <button onclick="addscoreOne('one', 3)">+3</button>
+            </div>
+            <div class="contains4">
+               <h3>Team-2</h3>
+               <button onclick="addscoreOne('two', 1)">+1</button>
+               <button onclick="addscoreOne('two', 2)">+2</button>
+               <button onclick="addscoreOne('two', 3)">+3</button>
+            </div>
+         </div>
+         <div class="contains5">
+            <button onclick="resetgame()">Reset</button>
+         </div>
+      </main>
 
-<body>
-
-
-    <div class="contains">
-        <h1 id="team1-score">0</h1>
-        <b>:</b>
-        <h1 id="team2-score">0</h1>
-    </div>
-    <div class="contains2">
-
-
-        <div>
-            <button onclick="addscoreOne('one', 1)">+1</button>
-            <button onclick="addscoreOne('one', 2)">+2</button>
-            <button onclick="addscoreOne('one', 3)">+3</button>
-        </div>
-        <div>
-            <button onclick="addscoreOne('two', 1)">+1</button>
-            <button onclick="addscoreOne('two', 2)">+2</button>
-            <button onclick="addscoreOne('two', 3)">+3</button>
-        </div>
-
-    </div>
-    <div>
-        <button onclick="resetgame()">Reset</button>
-    </div>
-
-
-
-
-    <script src="assets/js/main.js"></script>
-</body>
-
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>

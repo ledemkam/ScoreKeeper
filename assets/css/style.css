@@ -1,16 +1,35 @@
-html, body{
-    margin: 0;
-    padding: 0;
+html,
+body {
+   margin: 0;
+   padding: 0;
 }
-.contains{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contains {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
-.contains2{
-    display: flex;
+.contains2 {
+   display: flex;
+   width: 400px;
    justify-content: space-around;
 }
+.contains3,
+.contains4 {
+   display: flex;
+   flex-direction: column;
+}
 
+.contains5 {
+   display: flex;
+}
 
+#main {
+   height: 300px;
+   width: 500px;
+   display: flex;
+   background-color: aqua;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+}
