@@ -7,33 +7,38 @@
       <link rel="stylesheet" href="assets/css/style.css" />
       <title>Document</title>
    </head>
-
    <body>
-      <main id="main">
-         <div class="contains">
-            <h1 id="team1-score">0</h1>
-            <b>:</b>
-            <h1 id="team2-score">0</h1>
-         </div>
-         <div class="contains2">
-            <div class="contains3">
-               <h3>Team-1</h3>
-               <button onclick="addscoreOne('one', 1)">+1</button>
-               <button onclick="addscoreOne('one', 2)">+2</button>
-               <button onclick="addscoreOne('one', 3)">+3</button>
+      <section class="display">
+         <div class="scoredisplay">
+            <div class="home">
+               <div class="score">
+                  <h1 id="team1-score">0</h1>
+               </div>
+               <h3>Home</h3>
             </div>
-            <div class="contains4">
-               <h3>Team-2</h3>
-               <button onclick="addscoreOne('two', 1)">+1</button>
-               <button onclick="addscoreOne('two', 2)">+2</button>
-               <button onclick="addscoreOne('two', 3)">+3</button>
+            <div class="away">
+               <div class="score">
+                  <h1 id="team2-score">0</h1>
+               </div>
+               <h3>away</h3>
             </div>
          </div>
-         <div class="contains5">
+         <div class="point">
+            <div class="pointdisplay">
+               <button class="punk" onclick="addscoreOne('one', 1)">+1</button>
+               <button class="punk" onclick="addscoreOne('one', 2)">+2</button>
+               <button class="punk" onclick="addscoreOne('one', 3)">+3</button>
+            </div>
+            <div class="pointdisplay">
+               <button class="punk2" onclick="addscoreOne('two', 1)">+1</button>
+               <button class="punk2" onclick="addscoreOne('two', 2)">+2</button>
+               <button class="punk2" onclick="addscoreOne('two', 3)">+3</button>
+            </div>
+         </div>
+         <div class="reset">
             <button onclick="resetgame()">Reset</button>
          </div>
-      </main>
-
-      <script src="assets/js/main.js"></script>
+      </section>
+      <script src="assets/js/app.js"></script>
    </body>
 </html>
