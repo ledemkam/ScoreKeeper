@@ -1,35 +1,123 @@
-html,
-body {
+*,
+::before,
+::after {
    margin: 0;
    padding: 0;
 }
-.contains {
+body {
+   text-align: center;
+   background-color: #252422;
+   color: #fff;
+}
+
+.display {
+   margin: 0 auto;
+   width: 70%;
+   height: 70vh;
    display: flex;
    align-items: center;
    justify-content: center;
-}
-
-.contains2 {
-   display: flex;
-   width: 400px;
-   justify-content: space-around;
-}
-.contains3,
-.contains4 {
-   display: flex;
    flex-direction: column;
 }
-
-.contains5 {
+.scoredisplay {
    display: flex;
+   flex-direction: row;
+   height: 30vh;
+   width: 70%;
+
+   justify-content: space-evenly;
 }
 
-#main {
-   height: 300px;
-   width: 500px;
+.home {
+   width: 30%;
+   height: 28vh;
+   border-radius: 5px;
+   border: 5px solid #006d77;
+   position: relative;
+}
+.away {
+   width: 30%;
+   height: 28vh;
+   border-radius: 5px;
+   border: 5px solid #8f00ff;
+   position: relative;
+}
+.score {
+   background-color: #000;
+   font-size: 2rem;
+   width: 80%;
+   height: 25vh;
+   position: absolute;
+   top: 5%;
+   left: 10%;
+   color: #fcca46;
+   border: 1px solid #0000;
+   border-radius: 5px;
+}
+h1 {
+   padding: 40%;
+}
+
+h3 {
+   position: absolute;
+   text-align: center;
+   background-color: #252422;
+   bottom: -4%;
+   left: 40%;
+   width: 25%;
+   height: 2vh;
+   z-index: 5;
+   border: none;
+}
+
+.point {
    display: flex;
-   background-color: aqua;
-   justify-content: space-around;
+   justify-content: space-evenly;
+   height: 15vh;
+   width: 70%;
+}
+.pointdisplay {
+   display: flex;
+   width: 30%;
+   height: 15vh;
+   justify-content: space-evenly;
    align-items: center;
-   flex-direction: column;
+}
+.punk {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 20%;
+   height: 5vh;
+   background-color: #006d77;
+   border-radius: 5px;
+   border: 5px solid #006d77;
+   color: #fff;
+   font-weight: 900;
+}
+.punk2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 20%;
+   height: 5vh;
+   border-radius: 5px;
+   border: 5px solid #8f00ff;
+   background-color: #8f00ff;
+   color: #fff;
+   font-weight: 900;
+}
+
+.reset {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25%;
+   height: 2, 5vh;
+}
+button {
+   width: 25%;
+   height: 2, 5vh;
+   border-radius: 5px;
+   border: 5px solid #ffffffff;
 }
